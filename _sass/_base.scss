@@ -44,6 +44,7 @@ img {
     margin-top: -48px;
     max-width: 100%;
     vertical-align: middle;
+    width: 150px;
 }
 
 
@@ -110,8 +111,7 @@ a {
     }
 
     &:hover {
-        color: $text-color;
-        // text-decoration: underline;
+      color: $brand-color;
     }
 }
 
@@ -211,7 +211,7 @@ pre {
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+          fill: $grey-color;
         }
     }
 }
@@ -220,13 +220,20 @@ pre {
 
     > svg {
         display: inline-block;
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         vertical-align: middle;
+	margin: 0 9px;
 
         path {
-            fill: $grey-color;
+            fill: $white-color;
+            webkit-transition: fill 1s ease-out; /* For Safari 3.1 to 6.0 */
+	    transition: fill 1s ease-out;
+	    &:hover {
+	      fill: $pink-light-color;
+	    }
         }
+
     }
 }
 
@@ -237,6 +244,49 @@ pre {
         width: 50px;
         height: 50px;
         vertical-align: middle;
+    }
+}
+
+.icon-inside-big {
+
+    > svg {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        vertical-align: middle;
+        margin-top: 50px;
+	margin-right: 20px;
+	margin-left: 20px;
+
+	path {
+	  fill: $grey-color;
+	  webkit-transition: fill 1s ease-out; /* For Safari 3.1 to 6.0 */
+	  transition: fill 1s ease-out;
+	  &:hover {
+	    fill: $pink-light-color;
+	  }
+        }
+    }
+}
+
+.icon-footer {
+
+    > svg {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+	margin-right: 15px;
+	margin-top: 5px;
+
+	path {
+	  fill: #828282;
+	  -webkit-transition: fill 1s ease-out; /* For Safari 3.1 to 6.0 */
+	  transition: fill 1s ease-out;
+	  
+	  &:hover {
+	    fill: #f26359;
+          }
+        }  
     }
 }
 
@@ -255,12 +305,13 @@ pre {
 
 #main {
   display: block;
+  margin-top: 20px;
 }
 
 .text-center {
   text-align: center;
   line-height: 140px;
-  height: 260px;
+  height: 160px;
   font-weight: 600;
   padding: 0 40px;
 }
@@ -268,7 +319,11 @@ pre {
 .inside-text {
   color: #828282;
   text-align: center;
-  margin-top: 1%;
+  font-size: 20px;
+}
+
+.version {
+  font-size: 12px;
 }
 
 .home-title {
@@ -284,6 +339,15 @@ pre {
 
 .hexa {
   margin-top: 7%;
+  margin-bottom: 30px;
+}
+
+.hexa a {
+  color: #fafafa;
+  transition: font-size .2s ease-out;
+  &:hover {
+    font-size: 22px; 
+  }
 }
 
 .menu {
@@ -297,7 +361,7 @@ pre {
 
 .hexagon-download {
   position: relative;
-  width: 250px; 
+  width: 250px;
   height: 144.34px;
   background-color: #f26359;
   margin: 72.17px 0;
@@ -311,6 +375,7 @@ display: inline-block;
   width: 0;
   border-left: 125px solid transparent;
   border-right: 125px solid transparent;
+  font-size: 27px;
 }
 
 .hexagon-download:before {
@@ -324,13 +389,19 @@ display: inline-block;
   border-top: 72.17px solid #f26359;
 }
 
+.hexagon-download .hexa-content {
+  padding: 0;
+  padding-top: 25px;
+}
+
 .hexagon {
   position: relative;
-  width: 190px; 
+  width: 190px;
   height: 109.70px;
   background-color: #F58A74;
   margin: 54.85px 0;
-display: inline-block;
+  display: inline-block;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
 }
 
 .hexagon:before,
@@ -355,9 +426,9 @@ display: inline-block;
 
 
 .hexa-content {
- position: absolute; 
- color: #fafafa; 
- font-size: 24px; 
+ position: absolute;
+ color: #fafafa;
+ font-size: 24px;
  padding-top: 20%;
  width: 100%;
  text-align: center;
