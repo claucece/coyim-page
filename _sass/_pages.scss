@@ -25,6 +25,15 @@
 height: 200px;
 }
 
+.in {
+font-size: 20px;
+}
+
+.t {
+width: 250px;
+font-size: 14px;
+}
+
 label > input { /* HIDE RADIO */
   visibility: hidden; /* Makes input not-clickable */
   position: absolute; /* Remove input from document flow */
