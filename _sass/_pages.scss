@@ -24,7 +24,7 @@
 .image-container {
     height: 210px;
     width: 210px;
-    border: double lightgray;
+    border: double black;
 }
 
 .subtext {
@@ -37,13 +37,12 @@ label > input { /* HIDE RADIO */
     position: absolute; /* Remove input from document flow */
 }
 
-label > input + img { /* IMAGE STYLES */
+label > input + .image-container{ /* IMAGE STYLES */
     cursor:pointer;
-    border:2px solid transparent;
 }
 
-label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
-    border:2px solid #f00;
+label > input:checked + .image-container{ /* (RADIO CHECKED) IMAGE STYLES */
+    border: double #f00;
 }
 
 .container {
