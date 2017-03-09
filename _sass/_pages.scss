@@ -3,43 +3,45 @@
  */
 
 .content {
-  margin-top: 50px;
+    margin-top: 50px;
 }
 
 .one {
-   margin-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .container-2 {
-   width:100%;
-   display: flex;
-   justify-content: space-around;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
 
 }
 
-.imp {
-  margin-top: 50px;
+.subtitle {
+    margin-top: 50px;
 }
 
-.l {
-height: 200px;
+.image-container {
+    height: 200px;
 }
 
-.t {
-width: 250px;
-font-size: 14px;
+.subtext {
+    width: 250px;
+    font-size: 14px;
 }
 
 label > input { /* HIDE RADIO */
-  visibility: hidden; /* Makes input not-clickable */
-  position: absolute; /* Remove input from document flow */
-  }
-  label > input + img { /* IMAGE STYLES */
-  cursor:pointer;
-  border:2px solid transparent;
-  }
-  label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
-  border:2px solid #f00;
+    visibility: hidden; /* Makes input not-clickable */
+    position: absolute; /* Remove input from document flow */
+}
+
+label > input + img { /* IMAGE STYLES */
+    cursor:pointer;
+    border:2px solid transparent;
+}
+
+label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+    border:2px solid #f00;
 }
 
 .container {
