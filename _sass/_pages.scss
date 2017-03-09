@@ -25,6 +25,15 @@
     height: 210px;
     width: 210px;
     border: double #dcdcdc;
+    position: relative;
+}
+
+.image-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
 .subtext {
