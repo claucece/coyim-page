@@ -39,7 +39,7 @@ ul, ol, dl, figure,
 /**
  * Images
  */
-img {
+.img {
     margin-top: -48px;
     max-width: 100%;
     vertical-align: middle;
@@ -157,12 +157,10 @@ pre {
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+    padding-right: 250px;
+    padding-left: 250px;
 
     @extend %clearfix;
 
@@ -274,10 +272,10 @@ pre {
 	  fill: #828282;
 	  -webkit-transition: fill 1s ease-out; /* For Safari 3.1 to 6.0 */
 	  transition: fill 1s ease-out;
-	} 
+	}
         &:hover path {
           fill: $pink-color;
         }
-    }   
+    }
 }
 

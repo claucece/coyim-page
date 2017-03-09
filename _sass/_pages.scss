@@ -6,6 +6,45 @@
   margin-top: 50px;
 }
 
+.one {
+   margin-bottom: 50px;
+}
+
+.container-2 {
+   width:100%;
+   display: flex;
+   justify-content: space-around;
+
+}
+
+.imp {
+  margin-top: 50px;
+}
+
+.l {
+height: 100px;
+}
+
+label > input { /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+  }
+  label > input + img { /* IMAGE STYLES */
+  cursor:pointer;
+  border:2px solid transparent;
+  }
+  label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:2px solid #f00;
+}
+
+.first {
+    > label {
+    > img {
+    margin: none !important;
+    }
+    }
+}
+
 .container {
   display: -webkit-flex;
   display: flex;
