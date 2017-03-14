@@ -132,12 +132,19 @@
    -webkit-transition: color 1s ease-out; /* For Safari 3.1 to 6.0 */
    transition: color 0.5s ease-out;
    cursor: pointer;
+   width: 90%;
 
    &:hover {
      color: $pink-dark-color;
    }
   }
 
+}
+
+.question {
+  background-color: linen;
+  margin: 10px 0;
+  padding: 10px;
 }
 
 @mixin toggle() {
@@ -161,11 +168,12 @@ $questions: (1, 2, 3, 4);
 			  font-weight: bold;
 			  content: "-";
 			  text-align: center;
-			  vertical-align: super;
+			  vertical-align: top;
 			  display: inline-block;
 			  width: 40px;
 			  height: 40px;
 			  margin-left: 7px;
+		          margin-top: 10px;
 			  background: radial-gradient(ellipse at top, #CCC 50%, transparent 50%);
 			}
 		}
